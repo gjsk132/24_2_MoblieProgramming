@@ -4,15 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:hint="실수 값 1"
+        android:textColorHint="#D3D3D3"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:hint="실수 값 2"
+        android:textColorHint="#D3D3D3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input2">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:text="더하기"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input2" />
+
+        <Button
+            android:id="@+id/diff"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:text="빼기"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/mult"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:text="곱하기"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/div" />
+
+        <Button
+            android:id="@+id/div"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:text="나누기"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/remainder"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:text="나머지 값"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textColor="#520082"
+        android:text="실수 값을 입력해주세요."
+        android:textColorHint="#D3D3D3"
+        android:textSize="28sp"
+        app:layout_constraintTop_toBottomOf="@+id/remainder" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
