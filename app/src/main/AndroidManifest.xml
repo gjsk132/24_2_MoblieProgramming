@@ -19,7 +19,7 @@
             android:name=".Chapter6"
             android:exported="false" />
         <activity
-            android:name=".Assignment_2"
+            android:name=".Assignment_3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

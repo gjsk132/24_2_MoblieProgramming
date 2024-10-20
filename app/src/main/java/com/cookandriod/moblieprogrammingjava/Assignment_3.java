@@ -8,14 +8,12 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-public class Assignment_2 extends AppCompatActivity {
+public class Assignment_3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_assignment2);
+        setContentView(R.layout.activity_assignment3);
 
         TextView nameTextView = findViewById(R.id.Name);
         TextView engNameTextView = findViewById(R.id.engName);
