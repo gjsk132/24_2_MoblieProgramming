@@ -24,7 +24,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:text=""
-                android:hint="민규 계산기 입력되는 숫자들"
+                android:hint="숫자를 입력하세요."
                 android:textSize="20dp" />
         </ScrollView>
 
