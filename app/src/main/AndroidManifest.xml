@@ -10,8 +10,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MoblieProgrammingJava"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".Chapter2_2"
+            android:exported="false" />
+        <activity
+            android:name=".Chapter2_1"
+            android:exported="false" />
+        <activity
+            android:name=".Assignment_3"
+            android:exported="false" />
         <activity
             android:name=".Test"
             android:exported="false" />
@@ -25,7 +34,7 @@
             android:name=".Chapter6"
             android:exported="false" />
         <activity
-            android:name=".Assignment_3"
+            android:name=".Layout"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
